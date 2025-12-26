@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글쓰기 - 집사 커뮤니티</title>
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/write.css">
+</head>
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo"><a href="index.html"><img src="img/logo_ko.png" alt="CATHOME"></a></h1>
+      <nav class="header-nav">
+        <a href="index.html">홈</a>
+        <a href="board.html">게시판</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 컨텐츠 -->
+  <main class="write-container">
+    <div class="write-title">
+      <h2>글쓰기</h2>
+    </div>
+
+    <form id="writeForm" class="write-form">
+      <!-- 제목 -->
+      <div class="form-group">
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title" placeholder="제목을 입력하세요" required maxlength="255">
+      </div>
+
+      <!-- 내용 -->
+      <div class="form-group">
+        <label for="content">내용</label>
+        <textarea id="content" name="content" placeholder="내용을 입력하세요" required rows="15"></textarea>
+      </div>
+
+      <!-- 이미지 업로드 -->
+      <div class="form-group">
+        <label for="image">이미지 (선택)</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        <div id="imagePreview" class="image-preview"></div>
+      </div>
+
+      <!-- 버튼 -->
+      <div class="form-buttons">
+        <button type="button" class="btn-cancel" onclick="history.back()">취소</button>
+        <button type="submit" class="btn-submit">등록</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Supabase JS SDK (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- JavaScript -->
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/write.js"></script>
+</body>
+</html>

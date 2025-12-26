@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 - Cat Home</title>
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <main class="login-container">
+    <div class="login-box">
+      <!-- 로고 -->
+      <h1 class="logo"><a href="index.html"><img src="img/logo_ko.png" alt="CATHOME"></a></h1>
+
+      <!-- 로그인 폼 -->
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" placeholder="이메일을 입력하세요" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">비밀번호</label>
+          <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" required>
+        </div>
+
+        <button type="submit" class="btn-login">로그인</button>
+      </form>
+
+      <!-- 회원가입 링크 -->
+      <div class="signup-link">
+        <p>아직 회원이 아니신가요? <a href="#" id="signupLink">회원가입</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 회원가입 모달 -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>회원가입</h2>
+      <form id="signupForm" class="signup-form">
+        <div class="form-group">
+          <label for="signupEmail">이메일</label>
+          <input type="email" id="signupEmail" name="signupEmail" placeholder="이메일을 입력하세요" required>
+        </div>
+
+        <div class="form-group">
+          <label for="signupPassword">비밀번호</label>
+          <input type="password" id="signupPassword" name="signupPassword" placeholder="비밀번호를 입력하세요 (최소 6자)" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">비밀번호 확인</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="비밀번호를 다시 입력하세요" required>
+        </div>
+
+        <button type="submit" class="btn-signup">회원가입</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Supabase JS SDK (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- JavaScript -->
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

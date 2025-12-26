@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Home - 고양이 쇼핑몰</title>
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="header-container">
+      <button class="hamburger-menu" aria-label="메뉴">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <h1 class="logo"><a href="index.html"><img src="img/logo_ko.png" alt="CATHOME"></a></h1>
+      <div class="search-box">
+        <input type="text" placeholder="어떤 상품을 찾으세요?">
+        <button type="button" class="search-btn">검색</button>
+      </div>
+      <div class="header-icons">
+        <button class="icon-notification" aria-label="알림">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+        <button class="icon-cart" aria-label="장바구니">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <a href="login.html" class="icon-login" aria-label="로그인">
+          <i class="fa-regular fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 네비게이션 -->
+  <nav class="nav">
+    <ul class="nav-menu">
+      <li><a href="#">카테고리별</a></li>
+      <li><a href="#">딜샵</a></li>
+      <li><a href="#">신상품</a></li>
+      <li><a href="#">랭킹</a></li>
+      <li><a href="#">이벤트</a></li>
+      <li><a href="#">체험단</a></li>
+      <li><a href="board.html">집사 커뮤니티</a></li>
+    </ul>
+  </nav>
+
+  <!-- 메인 컨텐츠 -->
+  <main>
+    <!-- 배너 슬라이더 섹션 -->
+    <section class="banner-section">
+      <div class="slider">
+        <div class="slide">슬라이더 이미지 1</div>
+        <div class="slide">슬라이더 이미지 2</div>
+        <div class="slide">슬라이더 이미지 3</div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev">이전</button>
+        <span class="slide-count">1/3</span>
+        <button class="next">다음</button>
+      </div>
+    </section>
+
+    <!-- 카테고리 섹션 -->
+    <section class="category-section">
+      <div class="category-tabs">
+        <button class="tab active">신상</button>
+        <button class="tab">간식</button>
+        <button class="tab">장난감</button>
+      </div>
+      <div class="category-icons">
+        <div class="category-item">
+          <div class="icon">아이콘</div>
+          <p>카눈</p>
+        </div>
+        <div class="category-item">
+          <div class="icon">아이콘</div>
+          <p>이갈이</p>
+        </div>
+        <div class="category-item">
+          <div class="icon">아이콘</div>
+          <p>사냥이</p>
+        </div>
+        <div class="category-item">
+          <div class="icon">아이콘</div>
+          <p>인형방</p>
+        </div>
+        <div class="category-item">
+          <div class="icon">아이콘</div>
+          <p>캔낚시</p>
+        </div>
+        <div class="category-item">
+          <div class="icon">아이콘</div>
+          <p>츄러츄</p>
+        </div>
+        <div class="category-item">
+          <div class="icon">아이콘</div>
+          <p>열꽝뽀</p>
+        </div>
+        <div class="category-item">
+          <div class="icon">아이콘</div>
+          <p>애묘용품진열대</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 핫딜 섹션 -->
+    <section class="best-shop-section">
+      <div class="section-header">
+        <h2>best shop</h2>
+        <a href="#" class="more-btn">more</a>
+      </div>
+      <div class="product-list">
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 신상품 섹션 -->
+    <section class="best-new-section">
+      <div class="section-header">
+        <h2>best new</h2>
+        <a href="#" class="more-btn">more</a>
+      </div>
+      <div class="product-list">
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+        <article class="product-card">
+          <div class="product-img">count-img</div>
+          <h3 class="product-name">count-text</h3>
+          <p class="product-price">count-txt</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 랭킹 섹션 -->
+    <section class="rank-section">
+      <div class="section-header">
+        <h2>rank time</h2>
+        <span class="rank-time">rank-time</span>
+      </div>
+      <div class="rank-wrapper">
+        <div class="rank-column">
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <div class="rank-content">
+              <div class="rank-img">rank-img</div>
+              <p class="rank-title">rank-title</p>
+            </div>
+          </div>
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <div class="rank-content">
+              <div class="rank-img">rank-img</div>
+              <p class="rank-title">rank-title</p>
+            </div>
+          </div>
+        </div>
+        <div class="rank-column">
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <div class="rank-content">
+              <div class="rank-img">rank-img</div>
+              <p class="rank-title">rank-title</p>
+            </div>
+          </div>
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <div class="rank-content">
+              <div class="rank-img">rank-img</div>
+              <p class="rank-title">rank-title</p>
+            </div>
+          </div>
+        </div>
+        <div class="rank-list">
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <p class="rank-title">rank-title</p>
+          </div>
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <p class="rank-title">rank-title</p>
+          </div>
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <p class="rank-title">rank-title</p>
+          </div>
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <p class="rank-title">rank-title</p>
+          </div>
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <p class="rank-title">rank-title</p>
+          </div>
+          <div class="rank-item">
+            <span class="rank-count">count</span>
+            <p class="rank-title">rank-title</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 커뮤니티 섹션 -->
+    <section class="community-section">
+      <div class="section-header">
+        <h2>best community</h2>
+        <a href="board.html" class="more-btn">more</a>
+      </div>
+      <div class="community-grid">
+        <article class="community-card">
+          <div class="community-img">comm-img</div>
+          <h3 class="community-title">comm-title</h3>
+        </article>
+        <article class="community-card">
+          <div class="community-img">comm-img</div>
+          <h3 class="community-title">comm-title</h3>
+        </article>
+        <article class="community-card">
+          <div class="community-img">comm-img</div>
+          <h3 class="community-title">comm-title</h3>
+        </article>
+        <article class="community-card">
+          <div class="community-img">comm-img</div>
+          <h3 class="community-title">comm-title</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- 광고 배너 섹션 -->
+    <section class="advertisement-section">
+      <div class="ad-banner">#banner x 3</div>
+      <div class="ad-banner">#banner x 3</div>
+      <div class="ad-banner">#banner x 3</div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">footer-logo</div>
+        <div class="footer-sns">SNS</div>
+      </div>
+      <div class="footer-links">
+        <a href="#">footer-link</a>
+        <a href="#">footer-link</a>
+      </div>
+      <div class="footer-info">
+        <p>footer-txt</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Supabase JS SDK (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- JavaScript -->
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

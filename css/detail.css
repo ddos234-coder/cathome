@@ -1,0 +1,240 @@
+/* ========================================
+   Reset & Base Styles
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  font-size: 18px;
+  color: #111111;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: inline-block;
+  line-height: 0;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav a {
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #FF6D00;
+}
+
+/* ========================================
+   Detail Container
+   ======================================== */
+.detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ========================================
+   Post Detail
+   ======================================== */
+.post-detail {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 16px;
+}
+
+.post-header {
+  border-bottom: 2px solid #FF6D00;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.post-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 15px;
+  word-break: break-word;
+}
+
+.post-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.post-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post-content {
+  margin-bottom: 30px;
+}
+
+.post-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.post-image {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.post-image img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   Button Group
+   ======================================== */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.right-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-list,
+.btn-edit,
+.btn-delete {
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-list {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.btn-list:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-edit {
+  background-color: #00A8EA;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background-color: #0090cc;
+}
+
+.btn-delete {
+  background-color: #ff4444;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #cc0000;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 768px) {
+  .detail-container {
+    margin: 20px auto;
+  }
+
+  .post-detail {
+    padding: 25px 20px;
+  }
+
+  .post-title {
+    font-size: 22px;
+  }
+
+  .post-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .right-buttons {
+    width: 100%;
+  }
+
+  .btn-list,
+  .btn-edit,
+  .btn-delete {
+    width: 100%;
+  }
+
+  .right-buttons {
+    flex-direction: column;
+  }
+}

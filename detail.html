@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 상세 - 집사 커뮤니티</title>
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo"><a href="index.html"><img src="img/logo_ko.png" alt="CATHOME"></a></h1>
+      <nav class="header-nav">
+        <a href="index.html">홈</a>
+        <a href="board.html">게시판</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 컨텐츠 -->
+  <main class="detail-container">
+    <!-- 게시글 상세 -->
+    <article class="post-detail" id="postDetail">
+      <!-- 게시글 내용이 여기에 동적으로 추가됩니다 -->
+      <div class="loading">로딩 중...</div>
+    </article>
+
+    <!-- 버튼 그룹 -->
+    <div class="button-group" id="buttonGroup" style="display: none;">
+      <button class="btn-list" onclick="location.href='board.html'">목록</button>
+      <div class="right-buttons" id="rightButtons"></div>
+    </div>
+  </main>
+
+  <!-- Supabase JS SDK (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- JavaScript -->
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

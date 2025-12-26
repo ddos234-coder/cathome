@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>집사 커뮤니티 - Cat Home</title>
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/board.css">
+</head>
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo"><a href="index.html"><img src="img/logo_ko.png" alt="CATHOME"></a></h1>
+      <nav class="header-nav">
+        <a href="index.html">홈</a>
+        <a href="login.html">로그인</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 컨텐츠 -->
+  <main class="board-container">
+    <div class="board-title">
+      <h2>집사 커뮤니티</h2>
+    </div>
+
+    <!-- 검색 및 글쓰기 영역 -->
+    <div class="board-actions">
+      <div class="search-area">
+        <input type="text" id="searchInput" placeholder="검색어를 입력해주세요.">
+        <button class="btn-search">검색</button>
+      </div>
+      <button class="btn-write">글쓰기</button>
+    </div>
+
+    <!-- 게시글 목록 -->
+    <div class="post-list">
+      <table class="post-table">
+        <thead>
+          <tr>
+            <th class="col-number">번호</th>
+            <th class="col-title">제목</th>
+            <th class="col-author">이름</th>
+            <th class="col-id">아이디</th>
+            <th class="col-date">작성일</th>
+            <th class="col-views">조회수</th>
+          </tr>
+        </thead>
+        <tbody id="postList">
+          <!-- 게시글 목록이 여기에 동적으로 추가됩니다 -->
+          <tr>
+            <td>6</td>
+            <td class="title-cell"><a href="#">좋은글 공유합니다~~~</a></td>
+            <td>홍길동</td>
+            <td>hong</td>
+            <td>2022-08-26</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="title-cell"><a href="#">가입인사</a></td>
+            <td>홍길동</td>
+            <td>hong</td>
+            <td>2022-08-26</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td class="title-cell"><a href="#">😺^_^) 최고에요</a></td>
+            <td></td>
+            <td>won</td>
+            <td>2022-08-25</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="title-cell"><a href="#">안녕하세요~~ ㅇㅇ</a></td>
+            <td></td>
+            <td></td>
+            <td>2022-08-25</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="title-cell"><a href="#">반갑습니당</a></td>
+            <td>심청이</td>
+            <td>shim</td>
+            <td>2022-08-16</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="title-cell"><a href="#">안녕하세요</a></td>
+            <td>홍길동</td>
+            <td>hong</td>
+            <td>2022-08-16</td>
+            <td>44</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 페이지네이션 -->
+    <div class="pagination">
+      <button class="page-btn">이전</button>
+      <span class="page-info">1 page / 1 pages</span>
+      <button class="page-btn">다음</button>
+    </div>
+  </main>
+
+  <!-- Supabase JS SDK (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- JavaScript -->
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/board.js"></script>
+</body>
+</html>

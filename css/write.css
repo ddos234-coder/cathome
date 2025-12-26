@@ -1,0 +1,245 @@
+/* ========================================
+   Reset & Base Styles
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  font-size: 18px;
+  color: #111111;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: inline-block;
+  line-height: 0;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav a {
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #FF6D00;
+}
+
+/* ========================================
+   Write Container
+   ======================================== */
+.write-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.write-title {
+  margin-bottom: 30px;
+}
+
+.write-title h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FF6D00;
+}
+
+/* ========================================
+   Write Form
+   ======================================== */
+.write-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #FF6D00;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 300px;
+}
+
+.form-group input[type="file"] {
+  padding: 10px 0;
+}
+
+/* ========================================
+   Image Preview
+   ======================================== */
+.image-preview {
+  margin-top: 15px;
+  display: none;
+}
+
+.image-preview.active {
+  display: block;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-preview .remove-image {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #ff4444;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.image-preview .remove-image:hover {
+  background-color: #cc0000;
+}
+
+/* ========================================
+   Form Buttons
+   ======================================== */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.btn-cancel,
+.btn-submit {
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-cancel {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-submit {
+  background-color: #FF6D00;
+  color: #fff;
+}
+
+.btn-submit:hover {
+  background-color: #e66300;
+}
+
+.btn-submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 768px) {
+  .write-container {
+    margin: 20px auto;
+  }
+
+  .write-title h2 {
+    font-size: 24px;
+  }
+
+  .write-form {
+    padding: 20px;
+  }
+
+  .form-group textarea {
+    min-height: 200px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .btn-cancel,
+  .btn-submit {
+    width: 100%;
+  }
+}
